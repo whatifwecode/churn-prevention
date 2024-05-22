@@ -18,6 +18,8 @@ Tests/: Holds both unit and end-to-end tests.
 
 Main components include comments for a deeper understanding of the processes.
 
+***To rerun the whole flow you have to clean your local storage in browser.***
+
 Dependencies
 The project relies on common dependencies such as Vuex, Vue Router, Jest, and Cypress for testing. There are no specific dependencies beyond these common ones.
 
