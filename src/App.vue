@@ -2,7 +2,7 @@
   <div id="app">
     <router-view/>
     <ChurnPreventionModal />
-    <button @click="showModal" class="fixed bottom-4 right-4 bg-blue-500 text-white px-4 py-2 rounded">
+    <button @click="showModal" data-test="start-flow-button" class="start-flow-button fixed bottom-4 right-4 bg-blue-500 text-white px-4 py-2 rounded">
       Start Flow
     </button>
   </div>

@@ -3,7 +3,7 @@
     <p class="text-lg md:text-xl font-bold mb-4 text-center">Miks soovid tellimust tühistada?</p>
     <div class="mb-4 flex flex-col gap-3">
       <label v-for="(reason, index) in cancellationReasons()" :key="index" class="custom-radio-label">
-        <input type="radio" v-model="selectedReason" :value="reason" name="cancellationReason" class="hidden">
+        <input data-test="test-input" type="radio" v-model="selectedReason" :value="reason" name="cancellationReason" class="hidden">
         <span class="custom-radio"></span> {{ reason }}
       </label>
     </div>

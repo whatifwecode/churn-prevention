@@ -8,7 +8,7 @@
         :billing-period="offer.billingPeriod" />
     <div class="flex items-center justify-evenly text-center mb-5">
       <button @click="acceptOffer" class="bg-[#00d46e] text-white px-8 md:px-14 py-3 rounded-full mr-2 uppercase hover:bg-green-600 transition duration-300 ease-in-out">Soovin</button>
-      <button @click="nextStep" class="bg-gray-100 text-black px-6 py-3 rounded-full uppercase font-bold hover:bg-gray-300 transition duration-300 ease-in-out">Edasi tühistama</button>
+      <button data-test="continue-button" @click="nextStep" class="bg-gray-100 text-black px-6 py-3 rounded-full uppercase font-bold hover:bg-gray-300 transition duration-300 ease-in-out">Edasi tühistama</button>
     </div>
 </template>
 

@@ -1,6 +1,6 @@
 <template>
   <div class="flex items-center justify-between flex-col gap-1 mb-8">
-    <div class="text-sm font-bold">{{ stepToShow }}/{{ totalSteps }}</div>
+    <div class="text-sm font-bold"><span data-test="current-step">{{ stepToShow }}</span>/{{ totalSteps }}</div>
     <div class="flex items-center">
       <div v-for="index in totalSteps" :key="index" :class="indicatorClasses(index)">
       </div>

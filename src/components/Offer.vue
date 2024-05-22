@@ -32,7 +32,7 @@
 import { defineComponent, PropType } from 'vue';
 
 export default defineComponent({
-  name: 'OfferDetails',
+  name: 'Offer',
   props: {
     termName: {
       type: String as PropType<string>,

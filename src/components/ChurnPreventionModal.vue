@@ -1,8 +1,8 @@
 <template>
-  <div v-if="isVisible" class="fixed inset-0 bg-gray-300 bg-opacity-75 flex items-center justify-center z-50">
+  <div v-if="isVisible" class="modal-wrapper fixed inset-0 bg-gray-300 bg-opacity-75 flex items-center justify-center z-50">
     <div class="bg-white rounded-lg px-1.5 sm:p-6 py-1.5 md:p-10 w-full max-w-lg md:max-w-xl relative mx-4 sm:max-h-[80vh] md:max-h-[70vh] overflow-auto">
 
-      <CloseButton @close="closeModal" />
+      <CloseButton  @close="closeModal" />
       <ProgressIndicators :currentStep="currentStep"/>
 
       <!-- Step components -->
@@ -10,8 +10,8 @@
 
       <!-- Action buttons -->
       <div v-if="showActionButtons" class="flex items-center justify-evenly text-center mb-5 text-sm sm:text-sm">
-        <button @click="continueSubscription" class="bg-[#00d46e] text-white px-8 md:px-6 py-3 rounded-full mr-2 uppercase hover:bg-green-600 transition duration-300 ease-in-out">Jätkan tellimusega</button>
-        <button @click="requiredMutation" class="bg-gray-100 text-black px-8 md:px-6 py-3 rounded-full uppercase font-bold hover:bg-gray-300 transition duration-300 ease-in-out">Edasi tühistama</button>
+        <button data-test="continue-subscription-button" @click="continueSubscription" class="bg-[#00d46e] text-white px-8 md:px-6 py-3 rounded-full mr-2 uppercase hover:bg-green-600 transition duration-300 ease-in-out">Jätkan tellimusega</button>
+        <button data-test="continue-button" @click="requiredMutation" class="bg-gray-100 text-black px-8 md:px-6 py-3 rounded-full uppercase font-bold hover:bg-gray-300 transition duration-300 ease-in-out">Edasi tühistama</button>
       </div>
 
       <!-- Help section -->

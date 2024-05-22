@@ -28,7 +28,7 @@ const actions: ActionTree<State, State> = {
     },
     acceptOffer({ commit }) {
         commit('setAcceptedOffer', true);
-        commit('setCurrentStep', 5); // Assuming step 5 is a specific final step
+        commit('setCurrentStep', 5);
     },
     closeModal({ commit }) {
         commit('setModalVisibility', false);
