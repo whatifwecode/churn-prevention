@@ -24,21 +24,6 @@
 import { defineComponent, computed, watch, defineAsyncComponent } from 'vue';
 import { useStore } from 'vuex';
 
-const Step1 = defineAsyncComponent(() => import('@/components/steps/Step1.vue'));
-const Step2 = defineAsyncComponent(() => import('@/components/steps/Step2.vue'));
-const Step3 = defineAsyncComponent(() => import('@/components/steps/Step3.vue'));
-const Step4 = defineAsyncComponent(() => import('@/components/steps/Step4.vue'));
-const Step5 = defineAsyncComponent(() => import('@/components/steps/Step5.vue'));
-const Step6 = defineAsyncComponent(() => import('@/components/steps/Step6.vue'));
-const CloseButton = defineAsyncComponent(() => import('@/components/UI/CloseButton.vue'));
-const ProgressIndicators = defineAsyncComponent(() => import('@/components/UI/ProgressIndicators.vue'));
-const HelpSection = defineAsyncComponent(() => import('@/components/UI/HelpSection.vue'));
-const Offer = defineAsyncComponent(() => import('@/components/Offer.vue'));
-
-<script lang="ts">
-import { defineComponent, computed, watch, defineAsyncComponent } from 'vue';
-import { useStore } from 'vuex';
-
 // Importing async components for each step, UI components, and offer
 const Step1 = defineAsyncComponent(() => import('@/components/steps/Step1.vue'));
 const Step2 = defineAsyncComponent(() => import('@/components/steps/Step2.vue'));
