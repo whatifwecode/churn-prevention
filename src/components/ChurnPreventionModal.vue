@@ -87,13 +87,11 @@ export default defineComponent({
     const updateCancellationReason = (reason: string) => {
       store.dispatch('updateCancellationReason', reason);
       nextStep();
-      console.log(store.getters.cancellationReason);
     };
 
     const updateCancellationDescription = (description: string) => {
       store.dispatch('updateCancellationDescription', description);
       nextStep();
-      console.log(store.getters.cancellationDescription);
     };
 
     const requiredMutation = () => {
@@ -126,6 +124,7 @@ export default defineComponent({
         () => ({
           userInfo: store.state.userInfo,
           offer: store.state.offer,
+          state: store.state
         }),
         (newState) => {
           store.dispatch('saveState', newState);
